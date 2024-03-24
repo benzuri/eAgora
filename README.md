@@ -9,7 +9,7 @@ Scheme:
     Frontend:
     	Login
     
-        Backend:
+    Backend:
     	Dashboard		(procedures)	        [table]
     		New/Edit	(procedure)		[modal]
     	Detail			(bookings)		[table]	
@@ -50,7 +50,7 @@ Please check the official Laravel installation guide for server requirements bef
 
 Clone the repository
 
-    git clone https://github.com/benzuri/eagora.git
+    git clone https://github.com/benzuri/eAgora.git
 
 Switch to the app folder
 
