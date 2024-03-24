@@ -4,36 +4,37 @@
 - PHP 8.3
 - Tailwind
 
+Scheme:
 
-Frontend:
-	Login
+    Frontend:
+    	Login
+    
+        Backend:
+    	Dashboard		(procedures)	        [table]
+    		New/Edit	(procedure)		[modal]
+    	Detail			(bookings)		[table]	
 
-Backend:
-	Dashboard		(procedures)	[table]
-		New/Edit	(procedure)		[modal]
-	Detail			(bookings)		[table]	
+    DB:
+    	procedures
+    		title			string
+    		type_id			id
+    		state_id		id
+    		is_featured		boolean
+    		ended_at		date
+  
+    	types
+    		name			string		[event, registration, coupon, payment]
+    
+    	states
+    		name			string		[pending, progress, done]
+    
+    	bookings
+    		procedure_id	id
+    		card			string		[dni]
 
-DB:
-	procedures
-		title			string
-		type_id			id
-		state_id		id
-		is_featured		boolean
-		ended_at		date
-
-	types
-		name			string		[event, registration, coupon, payment]
-
-	states
-		name			string		[pending, progress, done]
-
-	bookings
-		procedure_id	id
-		card			string		[dni]
-
-API:
-	CRUD	(procedures)
-	Filter	(status, type)
+    API:
+    	CRUD	(procedures)
+    	Filter	(status, type)
 
 ## API REST
 
